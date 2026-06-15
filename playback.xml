@@ -820,13 +820,13 @@
         <title lang="zh">本集提要-迷墙-第17集</title>
     </programme>
     <programme channel="CCTV8电视剧" start="20260615193000 +0800" stop="20260615202540 +0800">
-        <title lang="zh">迷墙17/20</title>
+        <title lang="zh">迷墙第17集</title>
     </programme>
     <programme channel="CCTV8电视剧" start="20260615202540 +0800" stop="20260615203040 +0800">
         <title lang="zh">本集提要-迷墙-第18集</title>
     </programme>
     <programme channel="CCTV8电视剧" start="20260615203040 +0800" stop="20260615212440 +0800">
-        <title lang="zh">迷墙18/20</title>
+        <title lang="zh">迷墙第18集</title>
     </programme>
     <programme channel="CCTV8电视剧" start="20260615212440 +0800" stop="20260615212940 +0800">
         <title lang="zh">本集提要-爱情有烟火-第1集</title>
@@ -3573,7 +3573,7 @@
     <programme channel="辽宁卫视" start="20260615225200 +0800" stop="20260615233100 +0800">
         <title lang="zh">欢乐集结号</title>
     </programme>
-    <programme channel="辽宁卫视" start="20260615233100 +0800" stop="20260616000000 +0800">
+    <programme channel="辽宁卫视" start="20260615233100 +0800" stop="20260616002100 +0800">
         <title lang="zh">欢乐集结号</title>
     </programme>
     <channel id="河北卫视">
@@ -3726,7 +3726,7 @@
     <programme channel="河北卫视" start="20260615233000 +0800" stop="20260615233300 +0800">
         <title lang="zh">宣传段</title>
     </programme>
-    <programme channel="河北卫视" start="20260615233300 +0800" stop="20260616000000 +0800">
+    <programme channel="河北卫视" start="20260615233300 +0800" stop="20260616000300 +0800">
         <title lang="zh">纪录片：纪录</title>
     </programme>
     <channel id="江西卫视">
