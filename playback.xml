@@ -313,7 +313,7 @@
         <title lang="zh">全民畅舞-10</title>
     </programme>
     <programme channel="CCTV3综艺" start="20260630212230 +0800" stop="20260630223300 +0800">
-        <title lang="zh">心中的歌儿献给党-文艺专题</title>
+        <title lang="zh">中国乡村音乐大会-健康跃动篇</title>
     </programme>
     <programme channel="CCTV3综艺" start="20260630223300 +0800" stop="20260630231900 +0800">
         <title lang="zh">综艺喜乐汇-2026-758 爱在青山绿水间 1/33</title>
@@ -493,7 +493,7 @@
         <title lang="zh">燃动金杯-2026年世界杯小组赛第三轮进球集锦</title>
     </programme>
     <programme channel="CCTV5体育" start="20260630233000 +0800" stop="20260630235900 +0800">
-        <title lang="zh">2026世界杯-1/16决赛（科特迪瓦—挪威）</title>
+        <title lang="zh">2026世界杯-1/16决赛（科特迪瓦-挪威）</title>
     </programme>
     <channel id="CCTV5+体育赛事">
         <display-name lang="zh">CCTV5+体育赛事</display-name>
@@ -3276,7 +3276,7 @@
     <programme channel="江苏卫视" start="20260630234400 +0800" stop="20260630235900 +0800">
         <title lang="zh">去桃花盛开的地方2（14）</title>
     </programme>
-    <programme channel="江苏卫视" start="20260630235900 +0800" stop="20260701000000 +0800">
+    <programme channel="江苏卫视" start="20260630235900 +0800" stop="20260701015100 +0800">
         <title lang="zh">时代问答</title>
     </programme>
     <channel id="广东卫视">
