@@ -1,6 +1,12 @@
 # 使用方式
 
-账号🐔了。~~只有标清..~~ 高清为主😅 gitee仓库被改私有了..
+账号🐔了。~~只有标清..~~ 高清为主😅
+
+gitee仓库被封...
+
+~~gitee ip被ban，仓库链接已失效~~
+
+仓库地址存在频道缺失或无法播放的问题，稳定性较差，回放功能仅migu源生效。
 
 访问地址(可回看当天内容)
 
@@ -18,37 +24,43 @@ https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/ref
 
 # 本地部署
 
-使用node自带的http模块实现。
-
-> 注意事项
+> [!warning]
+> ⚠️注意事项
 >
-> 1. 登录后使用不保证安全，请谨慎使用
-> 1. 需要国内IP才可正常访问
+> 1. 登录会封号！登录会封号！登录会封号！为避免不必要的损失，请谨慎登录使用
+> 1. 需要国内IP才可正常访问（非港澳台地区）
 
 ## 配置
 
-配置信息如下，默认仅本机可用
+默认本机和局域网可用，提供自定义token，格式: <http://ip:port/mpass/userid/token>（未设置mpass请删除），使用此方式建议把画质改到蓝光或更高<br>
+配置信息如下:
 
-| 变量名    | 默认值                  | 类型   | 介绍                                       |
-| --------- | ----------------------- | ------ | ------------------------------------------ |
-| muserId   |                         | string | 用户id，可在网页端登录获取                 |
-| mtoken    |                         | string | 用户token，可在网页端登录获取              |
-| mport     | 1234                    | number | 服务本地启动端口                           |
-| mhost     | <http://localhost:1234> | string | 访问地址，用于节目和epg地址生成            |
-| mrateType | 3                       | number | 画质 2:标清 3:高清 4:蓝光(需要登录且有VIP) |
+| 环境变量名           | 默认值 | 类型    | 介绍                                                                                                                                |
+| -------------------- | ------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| muserId              |        | string  | 用户id<br>可在网页端登录获取                                                                                                        |
+| mtoken               |        | string  | 用户token<br>可在网页端登录获取                                                                                                     |
+| mport                | 1234   | number  | 本地运行端口号                                                                                                                      |
+| mhost                |        | string  | 公网/自定义访问地址<br>格式<http://ip:port>                                                                                         |
+| mrateType            | 3      | number  | 画质<br>2: 标清<br>3: 高清<br>4: 蓝光<br>7: 原画<br>9: 4k<br>ps:蓝光及以上需要登录且有VIP                                           |
+| mpass                |        | string  | 访问密码 大小写字母和数字<br>添加后访问格式 <http://ip:port/mpass/>...                                                              |
+| menableHDR           | true   | boolean | 是否开启HDR                                                                                                                         |
+| menableH265          | true   | boolean | 是否开启h265(原画画质)，开启后可能存在兼容性问题，比如浏览器播放没有画面                                                            |
+| mupdateInterval      | 6      | string  | 节目信息更新间隔，单位小时，不建议设置太短                                                                                          |
+| mignoreCategory      | null   | string  | 屏蔽分类，每个分类名用逗号隔开<br>例如: 央视,卫视,体育-昨天,体育-明天<br>TV,体育-明天<br>ps: TV可以屏蔽所有电视，PE可以屏蔽所有体育 |
+| mmergeTVCategory     | true   | boolean | 是否将TV节目数量较少的分类合并到其他分类                                                                                            |
+| mcustomMergeCategory | null   | string  | 自定义合并分类到其他分类，每个分类名用逗号隔开，需先将**变量mmergeTVCategory**设置**false**<br>格式: 熊猫,综艺,新闻                 |
 
 ## node
 
 ### 环境要求
 
-需要 NodeJS 15+ 环境
+需要 NodeJS 18+ 环境
 
 ### 安装
 
 ```shell
 git clone git@github.com:develop202/migu_video.git
 cd migu_video
-npm i
 ```
 
 ### 运行
@@ -61,13 +73,13 @@ node app.js
 Mac/Linux:
 
 ```shell
-mport=3000 mhost="http://localhost:3000" node app.js
+mport=3000 mhost=http://localhost:3000 node app.js
 ```
 
 Windows下使用git-bash等终端:
 
 ```shell
-set mport=3000 && set mhost="http://localhost:3000" && node app.js
+set mport=3000 && set mhost=http://localhost:3000 && node app.js
 ```
 
 Windows下使用PowerShell等终端:
